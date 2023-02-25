@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="./" />
+    <script src="./index.js" type="module"></script>
+    <style>
+      @font-face {
+        font-family: 'Pokemon';
+        src: url('./public/Pokemon.ttf');
+      }
+
+      @font-face {
+        font-family: 'Orange';
+        src: url('./public/Orange.otf');
+      }
+
+      :root {
+        --gray: #f3f2f0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        background-color: #f0f0f0;
+        display: flex;
+        font-family: 'Pokemon', monospace;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
+
+      div {
+        display: 'none';
+        font-family: 'Orange', monospace;
+      }
+
+      canvas {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <audio autoplay loop>
+        <source src="./sounds/intro.mp3" />
+      </audio>
+    </div>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>

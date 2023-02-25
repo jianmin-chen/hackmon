@@ -1,0 +1,19 @@
+{
+  "name": "hackmon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hackclub/hackmon",
+  "author": "Hack Club",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "http-server .",
+    "format": "prettier --ignore-path ./.prettierignore --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
